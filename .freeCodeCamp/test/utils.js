@@ -143,7 +143,7 @@ const getScriptOutput = async function (command) {
 
   setTimeout(() => {
     child.kill();
-  }, 1000);
+  }, 100000);
 
   const { stdout } = await child;
   return stdout;
